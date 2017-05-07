@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 
 ReactDOM.render(
   <div>
-    <h1>Huaua</h1>
+    <h1>RichAI</h1>
   </div>,
   document.getElementById('root')
 )
