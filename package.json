@@ -50,7 +50,7 @@
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "2.0.2"
   },
-  "scripts": {
+  "scripts": { 
     "start": "GRAPHQL_ENDPOINT=https://api.graph.cool/relay/v1/cj299fm5qevh00154virprnt3 node scripts/start.js",
     "build": "GRAPHQL_ENDPOINT=https://api.graph.cool/relay/v1/cj299fm5qevh00154virprnt3 node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
