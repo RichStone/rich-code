@@ -6,7 +6,7 @@ class Template extends Component {
     return (
       <div>
         <header>
-          <h1>TicTacTuring</h1>
+          <h1>RichCode</h1>
         </header>
         <main>
           {this.props.children}
