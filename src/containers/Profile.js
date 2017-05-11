@@ -5,7 +5,7 @@ class Profile extends Component {
   render() {
     return (
       <div>
-        Profile
+        <h2>Profile</h2>
       </div>
     )
   }
