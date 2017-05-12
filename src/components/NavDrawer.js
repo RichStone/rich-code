@@ -48,18 +48,12 @@ class NavDrawer extends Component{
                         />
                     </Link>
                     <Link
-                        to={'/profile'}
+                        to={'/profile '}
                     >
                         <MenuItem
                             primaryText={'Profile'}
                         />
                     </Link>
-                    <MenuItem
-                        primaryText={'Play'}
-                    />
-                    <MenuItem
-                        primaryText={'Profile'}
-                    />
                 </Drawer>
             </div>
         )
