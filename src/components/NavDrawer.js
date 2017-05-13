@@ -6,58 +6,60 @@ import FloatingActionButton from 'material-ui/FloatingActionButton'
 import Menu from 'material-ui/svg-icons/navigation/menu'
 import {Link} from 'react-router'
 
-class NavDrawer extends Component{
-    state = {
-        open: false
-    }
+class NavDrawer extends Component {
+   state = {
+      open: false
+   }
 
-    toggle = () => {
-        this.setState((prevState, props) => {
-            return {
-                open: !prevState.open
-            }
-        })
-    }
+   toggle = () => {
+      this.setState((prevState, props) => {
+         return {
+            open: !prevState.open
+         }
+      })
+   }
 
-    render() {
-        return (
-            <div>
-                <FloatingActionButton
-                    onTouchTap={this.toggle}
-                >
-                    <Menu/>
-                </FloatingActionButton>
-                <Drawer
-                    open={this.state.open}
-                >
-                    <div style={
-                        {
-                            height: '200px',
-                            width: '100%',
-                            backgroundColor: 'salmon'
-                        }
-                    }>
-                    LoginContainer
-                    </div>
-                    <Divider/>
-                    <Link
-                        to={'/'}
-                    >
-                        <MenuItem
-                            primaryText={'Play'}
-                        />
-                    </Link>
-                    <Link
-                        to={'/profile '}
-                    >
-                        <MenuItem
-                            primaryText={'Profile'}
-                        />
-                    </Link>
-                </Drawer>
-            </div>
-        )
-    }
+   render() {
+      return (
+         <div>
+            <FloatingActionButton
+               onTouchTap={this.toggle}
+            >
+               <Menu/>
+            </FloatingActionButton>
+            <Drawer
+               open={this.state.open}
+            >
+               <div style={
+                  {
+                     height: '200px',
+                     width: '100%',
+                     backgroundColor: 'salmon'
+                  }
+               }>
+                  LoginContainer
+               </div>
+               <Divider/>
+               <Link
+                  to={'/'}
+               >
+                  <MenuItem
+                     onTouchTap={this.toggle}
+                     primaryText={'Play'}
+                  />
+               </Link>
+               <Link
+                  to={'/profile '}
+               >
+                  <MenuItem
+                     onTouchTap={this.toggle}
+                     primaryText={'Profile'}
+                  />
+               </Link>
+            </Drawer>
+         </div>
+      )
+   }
 }
 
 
