@@ -9,15 +9,15 @@ const StayVisible = styled.div`
    transition: margin .2s;
 `
 export const NavToggleButton = (props) => {
-	return (
+   return (
       <StayVisible
          {...props}
       >
          <FloatingActionButton
             onTouchTap={props.toggle}
          >
-			   <Menu/>
-		   </FloatingActionButton>
+            <Menu/>
+         </FloatingActionButton>
       </StayVisible>
-	)
+   )
 }

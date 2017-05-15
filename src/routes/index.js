@@ -5,21 +5,21 @@ import Home from '../containers/Home'
 import Profile from '../containers/Profile'
 
 const createRoutes = () => {
-  return (
-    <Route
-      path='/'
-      component={Template}
-    >
-    <IndexRoute
-      component={Home}
-    />
-    <Route
-      path={'/profile'}
-      component={Profile}
-    />
+   return (
+      <Route
+         path='/'
+         component={Template}
+      >
+         <IndexRoute
+            component={Home}
+         />
+         <Route
+            path={'/profile'}
+            component={Profile}
+         />
 
-    </Route>
-  )
+      </Route>
+   )
 }
 
 const Routes = createRoutes()

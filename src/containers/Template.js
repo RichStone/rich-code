@@ -7,21 +7,21 @@ injectTapEventPlugin()
 
 class Template extends Component {
 
-render() {
-  return (
-      <MuiThemeProvider>
-        <div>
-          <NavDrawer/>
-           <Header>
-              RichCode
-           </Header>
-          <Main>
-            {this.props.children}
-          </Main>
-        </div>
-      </MuiThemeProvider>
-    )
-  }
+   render() {
+      return (
+         <MuiThemeProvider>
+            <div>
+               <NavDrawer/>
+               <Header>
+                  RichCode
+               </Header>
+               <Main>
+                  {this.props.children}
+               </Main>
+            </div>
+         </MuiThemeProvider>
+      )
+   }
 }
 
 export default Template
